@@ -100,9 +100,9 @@ void createNextGeneration() {
           true_count++;
         }
       }
-      local_cells.clear(); // dont need the content of the cells, only the number of trues.
+      local_cells.clear(); // dont need the content of the cells, only the number of trues. The number of adjacent cells which are true determines the fate of the cell
       
-      /* The true count lets us create determine the fate of the cell ...
+      /* 
        RULES TO CREATE THE NEXT GENERATION:
        - Every populated cell with 0 or 1 neighbour dies from isolation and becomes false.
        - Every populated cell with 2 or 3 neighbouring populated cells survives to the next generation and stays true. With 2 and unpopulated, it stays unpopulated.
