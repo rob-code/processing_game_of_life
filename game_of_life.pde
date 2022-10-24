@@ -38,6 +38,7 @@ void setup() {
   background(255);
   createBlankStarterArray();
   drawInstructionText();
+  frameRate(15);
 
   //2 other ways to start the game; a small seed array or a randomly generated full screen. Neither are as interesting as mouseDrag. Need drawArray() for both.
   //createSeedArray(); //use grid_spacing = 5
@@ -49,7 +50,6 @@ void setup() {
 }
 
 void draw() {
-  frameRate(15);
 
   /* Event control is still a bit flakey in that relies on the user inputting correct
      mouse and key strokes, it doesnt parse out all out of sequence key strokes. But its good enough for now. 
